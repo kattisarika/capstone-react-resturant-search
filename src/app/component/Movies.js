@@ -78,7 +78,7 @@ let Movies = React.createClass({
                                  movie_overview={movie.overview}
                                  movie_poster={"https://image.tmdb.org/t/p/w500" +  movie.poster_path} key={i} />;
                                
-           })}
+           })} 
        
       </div>
 

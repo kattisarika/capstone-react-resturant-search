@@ -21,10 +21,12 @@
   "dependencies": {
     "axios": "^0.15.3",
     "lodash": "^4.17.4",
+    "rc-tooltip": "^3.4.2",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-image": "^0.1.0",
     "react-native": "^0.42.0",
+    "style-it": "^1.6.5",
     "superagent": "^3.5.0"
   },
   "devDependencies": {

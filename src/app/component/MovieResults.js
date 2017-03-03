@@ -1,6 +1,8 @@
 import React from 'react';
 
 
+import ReactTooltip from 'react-tooltip'
+
 
 
 
@@ -14,15 +16,19 @@ let MovieResults = function(props) {
     };
 
  var  posterswrapper={
-    paddingTop: '75px'
+   
+   display:'inline-block',
+   width: '30%',
+   textAlign:'center',
+   margin: 'auto',
+   marginLeft:'40px',
+   border: '3px solid aliceblue',
+   marginBottom:'15px'
+
+
  }
 
-var poster={
-  width:'30%',
-  marginRight:'4%',
-  dispay:'inline-block',
-  position:'relative'
-}
+
  
 var posterinfooverlay={
   position:'absolute',
@@ -62,6 +68,37 @@ var imgstyle={
  marginTop:'20px'
 
 }
+const styles = {
+  display: 'inline-block',
+  height: '40px',
+  width: '200px',
+  textAlign: 'center',
+  background: '#90EE90',
+  marginRight: '3em',
+  marginBottom: '1em',
+  borderRadius: '6px solid aliceblue',
+};
+
+var tooltipstyle={
+ width: '200', 
+ height: '250',
+ background: '#90EE90',
+ textAlign: 'center',
+ marginBottom:'50px',
+ marginTop:'20px',
+ borderRadius: '6px solid green',
+}
+
+  var extraClass ={
+      fontSize: '20px !important',
+      pointerEvents:'auto !important',
+      visibility: 'visible !important',
+      opacity: '1 !important',
+      width: '250', 
+      height: '250',
+       
+    }
+
 
 
 var showimgsrc='';
@@ -73,21 +110,14 @@ else
 
 
   return (
-      <div className="user">
-      <div style={transparent}>
-        
-         Movie Title:      {props.movie_title} <br/>
-
-         Movie ReleaseDate: {props.movie_releaseDate} <br/>
+      <div style={posterswrapper} >
+      
+           <h3> Movie Title: {props.movie_title} </h3> <br/>     
+            <img src={showimgsrc} style={imgstyle} /> <br/>
+             <h3>Popularity: {props.movie_popularity} ReleaseDate: {props.movie_releaseDate}</h3>
+            <a  href='#' data-tip={props.movie_overview} > View More </a>
+            <ReactTooltip style={extraClass} delayHide={1000} effect='float' type="success"/>
           
-           Movie Popularity: {props.movie_popularity} <br/>
-
-           Overview : {props.movie_overview}  <br/>
-
-          <img src={showimgsrc} style={imgstyle} /> <br/>
-
-      </div>
-
     </div>
   )
 }
