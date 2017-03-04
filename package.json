@@ -21,6 +21,9 @@
   "dependencies": {
     "axios": "^0.15.3",
     "lodash": "^4.17.4",
+    "pui-css-tooltips": "^7.5.4",
+    "pui-react-overlay-trigger": "^7.5.4",
+    "pui-react-tooltip": "^7.5.4",
     "rc-tooltip": "^3.4.2",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",

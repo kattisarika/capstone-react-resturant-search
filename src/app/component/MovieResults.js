@@ -1,7 +1,5 @@
 import React from 'react';
-
-
-import ReactTooltip from 'react-tooltip'
+import ReactTooltip from 'react-tooltip';
 
 
 
@@ -24,11 +22,7 @@ let MovieResults = function(props) {
    marginLeft:'40px',
    border: '3px solid aliceblue',
    marginBottom:'15px'
-
-
  }
-
-
  
 var posterinfooverlay={
   position:'absolute',
@@ -115,9 +109,12 @@ else
            <h3> Movie Title: {props.movie_title} </h3> <br/>     
             <img src={showimgsrc} style={imgstyle} /> <br/>
              <h3>Popularity: {props.movie_popularity} ReleaseDate: {props.movie_releaseDate}</h3>
-            <a  href='#' data-tip={props.movie_overview} > View More </a>
-            <ReactTooltip style={extraClass} delayHide={1000} effect='float' type="success"/>
-          
+            
+             <div >
+                <a href="#" data-tip={props.movie_overview} data-for='happyFace'> View More </a>
+                <ReactTooltip id='happyFace' type="success"></ReactTooltip>
+              </div>
+           
     </div>
   )
 }
