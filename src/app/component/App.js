@@ -1,5 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router';
+import SearchMovies from '../../containers/SearchMovies';
+import MovieList from '../../containers/MovieList'
+  
+
 
 class App extends React.Component{
 
@@ -54,14 +58,12 @@ render(){
                 <header style={header} >
                   
        					<h1 style={heading}> Movies, Ratings , WatchLists </h1>
-        			 	<ul> 
-        			 	<li style={menu}> <Link style={linkstyle} to="/other" >Other</Link></li>
-        			 	</ul>
+        			 
         			            
                 </header>
-                <main className="main-content">
-                    {this.props.children}
-                </main>
+                <SearchMovies  />
+                <MovieList />
+               
                 <footer style={footerstyle}>
                    
                 </footer>
@@ -70,6 +72,8 @@ render(){
         );
 	}
 };
+
+
 
 export default App;
 

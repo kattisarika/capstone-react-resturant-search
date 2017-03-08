@@ -96,15 +96,15 @@ var tooltipstyle={
 
 
 var showimgsrc='';
-if(props.movie_poster === 'https://image.tmdb.org/t/p/w500null' || props.movie_poster==='')
+if(props.movie_poster === 'https://image.tmdb.org/t/p/w500null' || props.movie_poster===''){
   showimgsrc="../app/images/no-image-icon-23.jpg"
-else 
+}else {
    showimgsrc=props.movie_poster
-
+}
 
 
   return (
-      <div style={posterswrapper} >
+      <div>
       
            <h3> Movie Title: {props.movie_title} </h3> <br/>     
             <img src={showimgsrc} style={imgstyle} /> <br/>
