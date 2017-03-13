@@ -1,14 +1,1 @@
 node_modules
-*.js
-
-src/actions/index.js
-
-src/app/component/MovieResults.js
-
-src/app/component/Movies.js
-
-src/containers/MovieList.js
-
-src/containers/SearchMovies.js
-
-src/reducers/index.js
