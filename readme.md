@@ -7,6 +7,10 @@ MovieDB Search App uses 3rd party API from moviedb.org to search for movies, tvs
 show the popularity/rating of the movie and movie description.
 
 Screenshot
+![Screenshot](https://github.com/kattisarika/capstone-react-resturant-search/blob/master/readmeImages/homePage.png)
+
+
+![Screenshot](https://github.com/kattisarika/capstone-react-resturant-search/blob/master/readmeImages/homePageWidSearchResults.png)
 
 
 
