@@ -23,8 +23,9 @@ Screenshot
 
 ##Functionality 
 The app includes :
-1. Home Page
-2. An input Search text , where the user can enter any word or movie name.
+
+1. Home Page 
+2. An input Search text , where the user can enter any word or movie name
 3. The application calls the 3rd party API call to  searches for all the movies/ tv shows based on the input or query.
 4. The search brings the desired results and the results are displayed back on the UI
 
