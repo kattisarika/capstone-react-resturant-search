@@ -32,10 +32,12 @@ render(){
     }
 
    var heading={   
-   		float:'left',
-   		marginLeft:'50px',
+   		
+   		
 	    listStyle:'none',
-	    padding:'10px'
+	    padding:'10px',
+      textAlign:'center',
+      verticalAlign:'center'
 
    }
    
@@ -57,7 +59,7 @@ render(){
             <div>
                 <header style={header} >
                   
-       					<h1 style={heading}> Movies, Ratings , WatchLists </h1>
+       					<h1 style={heading}> MovieDB Search Application </h1>
         			 
         			            
                 </header>
