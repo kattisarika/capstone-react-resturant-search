@@ -9,6 +9,11 @@ show the popularity/rating of the movie and movie description.
 ##Use Case 
 This app helps search for movies & tv shows. 
 
+##Initial UX 
+The initial UX is present in (https://github.com/kattisarika/capstone-react-resturant-search/blob/master/readmeImages/)
+
+##Working Prototype
+Will be added once its pushed to heroku.
 
 Screenshot
 ![Screenshot](https://github.com/kattisarika/capstone-react-resturant-search/blob/master/readmeImages/homePage.png)
@@ -18,11 +23,13 @@ Screenshot
 
 ##Functionality 
 The app includes :
-
-1. Home Page 
+1. Home Page
+2. An input Search text , where the user can enter any word or movie name.
+3. The application calls the 3rd party API call to  searches for all the movies/ tv shows based on the input or query.
+4. The search brings the desired results and the results are displayed back on the UI
 
 ##Technical
-The application is built on React.The data is being called from 3rd party API. Various api calls are made to fetch, read & display data. 
+The application is built on React.The data is being called from 3rd party API from moviedb.org. The api currently being used is https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${query}. On providing the search query the API provides a list of movies based on the inputted query , and the search results are displayed back on the UI.
 
 ##Development RoadMap
 This is just the initial working prototype. More workflows would be added :-
