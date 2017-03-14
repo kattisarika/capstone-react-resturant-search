@@ -1,0 +1,87 @@
+div {
+    display: block;
+}
+
+header {
+    background-color: #104E8B;   
+    margin-bottom: 40px;   
+    height: 50px;
+    text-align: center;
+    color:white;
+    padding:15px;
+
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #252525;
+}
+
+header h1 {
+    line-height: 1;
+    margin-bottom: 0;
+    font-size: 22px;
+}
+
+header p {
+    margin-top: 0.5em;
+}
+
+.card {
+    border: 1px solid white;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    min-height: 480px;
+    max-height: 600px;
+   
+}
+
+.card-image {
+    width: 100%;
+    min-height: 440px;
+    max-height: 500px
+}
+
+.Imagewrap{
+    width:100%;
+
+}
+
+.card-content {
+    border: 1px solid lightgray;
+    padding: 20px;
+    min-height: 160px;
+    max-height: 200px
+
+}
+
+.card-content h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.card-content p {
+    margin: 0.5em 0;
+}
+
+img {
+    border-style: none;
+}
+
+.etsy-images {
+        width: 100%;
+        /* height: 30px;*/
+        text-align: center;
+        font-size: 17px;
+        margin-top: 1%;
+        padding: 30px;
+    }
+
+
+footer {
+    background-color: #104E8B;   
+    margin-bottom: 40px;   
+    height: 5%;
+   
+
+}

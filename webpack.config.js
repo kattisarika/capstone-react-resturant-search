@@ -12,14 +12,26 @@ var config ={
 	},
 	module:{
 
-		loaders: [{
-			test: /\.js?/,
-			include: SRC_DIR,
-			loader: "babel-loader",
-			query: {
-				presets: ["react","es2015","stage-2"]
+		loaders: [
+           // Extract css files
+            {
+                test: /\.css$/,
+                loaders: ['style-loader', 'css-loader'],
+                include: SRC_DIR,
+            },
+          
+
+			{
+				test: /\.js?/,
+				include: SRC_DIR,
+				loader: "babel-loader",
+				query: {
+					presets: ["react","es2015","stage-2"]
+				}
 			}
-		}]
+
+
+		]
 
 	}
 

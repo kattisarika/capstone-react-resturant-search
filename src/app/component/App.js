@@ -1,7 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router';
 import SearchMovies from '../../containers/SearchMovies';
-import MovieList from '../../containers/MovieList'
+import MovieList from '../../containers/MovieList';
+import styles from '../../css/main.css';
+import fstyles from '../../css/float-grid.css';
   
 
 
@@ -31,14 +33,11 @@ render(){
 	    border: '0'
     }
 
-   var heading={   
-   		
-   		
+   var heading={    				
 	    listStyle:'none',
 	    padding:'10px',
       textAlign:'center',
       verticalAlign:'center'
-
    }
    
 
@@ -55,22 +54,17 @@ render(){
 	    fontSize:'18px'
     }
 
-   return (
-            <div>
-                <header style={header} >
-                  
-       					<h1 style={heading}> MovieDB Search Application </h1>
-        			 
-        			            
-                </header>
-                <SearchMovies  />
-                <MovieList />
-               
-                <footer style={footerstyle}>
-                   
-                </footer>
+   
 
-            </div>
+   return (
+          <div className="row">
+             
+                <SearchMovies/>
+                <MovieList />
+                </div>
+            
+  
+           
         );
 	}
 };
