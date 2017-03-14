@@ -7,13 +7,13 @@ MovieDB Search App uses 3rd party API from moviedb.org to search for movies, tvs
 show the popularity/rating of the movie and movie description.
 
 ##Use Case 
-This app helps search for movies & tv shows. 
+Moviedb.org have released API's to fetch movies based on a given search criteria.This app provides the user interface, to input the search item and query the moviedb through the API call & helps search for movies & tv shows, movie details, & be displayed on the UI.. 
 
 ##Initial UX 
 The initial UX is present in (https://github.com/kattisarika/capstone-react-resturant-search/blob/master/readmeImages/)
 
 ##Working Prototype
-Will be added once its pushed to heroku.
+You can access a working prototype of the app here: https://lit-tundra-59229.herokuapp.com/ 
 
 Screenshot
 ![Screenshot](https://github.com/kattisarika/capstone-react-resturant-search/blob/master/readmeImages/homePage.png)
