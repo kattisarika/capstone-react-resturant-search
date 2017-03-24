@@ -10,7 +10,6 @@ export function fetchMovies(query){
   const url = `${BASE_URL}&query=${query}`;
   console.log(url);
    const request = axios.get(url);
-
   return {
     type: FETCH_MOVIES,
     payload: request
