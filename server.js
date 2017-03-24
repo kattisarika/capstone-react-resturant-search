@@ -4,6 +4,8 @@ var app = express();
 
 app.use(express.static("dist"));
 
-app.listen(process.env.PORT | 3000);
+var port = process.env.PORT || 3000;
 
-
+app.listen(port, function () {
+    console.log("local host" + port);
+});
