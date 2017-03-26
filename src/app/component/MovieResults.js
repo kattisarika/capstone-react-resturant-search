@@ -13,7 +13,7 @@ let MovieResults = function(props) {
 
 var showimgsrc='';
 if(props.movie_poster === 'https://image.tmdb.org/t/p/w500null' || props.movie_poster===''){
-  showimgsrc="../app/images/no-img.jpg"
+  showimgsrc="/app/images/no-img.jpg"
 }else {
    showimgsrc=props.movie_poster
 }
