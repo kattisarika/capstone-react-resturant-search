@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
 div {
     display: block;
 }
@@ -8,8 +16,7 @@ header {
     height: 100px;
     text-align: center;
     color:white;
-    padding:30px;
-}
+   }
 
 body {
     font-family: "Roboto", sans-serif;
@@ -20,7 +27,9 @@ header h1 {
     line-height: 1;
     margin-bottom: 0;
     font-size: 28px;
-     padding:30px;
+    padding:50px;
+    text-align: center;
+    vertical-align: center;
 }
 
 header p {
