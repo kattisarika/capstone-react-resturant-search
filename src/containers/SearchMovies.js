@@ -43,7 +43,7 @@ class SearchMovies extends Component{
 
 	render(){
 		 var searchinput ={
-		     width:'550px',
+		     width:'320px',
 		     height: '40px',  
 		     marginTop:'20px',
 		     marginBottom:'30px',
@@ -59,6 +59,9 @@ class SearchMovies extends Component{
 
 		 return (	
       <form onSubmit={this.onFormSubmit} style={inputgroup}>
+        <h5>
+        Search for your favorite movie title in the MovieDB API.
+         </h5>
         <input style={searchinput} 
           placeholder="Enter movies name (> 3 char.)"
           ref="query" 

@@ -23,9 +23,10 @@ if(props.movie_poster === 'https://image.tmdb.org/t/p/w500null' || props.movie_p
            <div className="card">           
                 <img src={showimgsrc}    className="card-image" />           
                <div className="card-content">   
-                    <h3> Movie Title: {props.movie_title} </h3> <br/>  
-                    <h3>Popularity: {props.movie_popularity} ReleaseDate: {props.movie_releaseDate}</h3>                     
-                          <a href="#" data-tip={props.movie_overview} data-for='happyFace'> View More </a>
+                    <h3> {props.movie_title} </h3> <br/>  
+                    <h3>Popularity: {props.movie_popularity} </h3>
+                    <h3>Release Date: {props.movie_releaseDate}</h3>                     
+                     <a href="#" className="astyle" data-tip={props.movie_overview} data-for='happyFace'> View More </a>
                           <ReactTooltip id='happyFace' type="success"></ReactTooltip>                     
                   </div> 
              </div>

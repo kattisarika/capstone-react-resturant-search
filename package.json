@@ -4,7 +4,7 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "npm run build",
     "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot",
     "build:prod": "webpack -p && cp src/index.html dist/index.html"
   },
